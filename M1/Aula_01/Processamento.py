@@ -8,7 +8,7 @@ print("Audio_entrada:",data)
 
 #Multiplica as magnitudes de entrada por 2
 for idx, magnitud in np.ndenumerate(data):
-  data[idx] = magnitud * 2
+    data[idx] = magnitud * 2
 
 #Printa arquivo de saida
 print("Audio_saida:",data)
