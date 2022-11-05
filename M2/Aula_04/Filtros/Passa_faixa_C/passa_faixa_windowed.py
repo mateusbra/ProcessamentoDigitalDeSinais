@@ -5,9 +5,9 @@ from scipy.signal import freqz
 entrada = np.fromfile("sweep.pcm", dtype='int16')
 
 fs = 8000
-fchz1 = 400
+fchz1 = 1000
 fc1 = fchz1/fs#400/8000
-fchz2 = 800
+fchz2 = 2000
 fc2 = fchz2/fs#400/8000
 M = 100
 

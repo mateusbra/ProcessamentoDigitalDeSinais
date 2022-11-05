@@ -14,8 +14,8 @@ int main()
    int i, n, n_amost;
    short entrada, saida;
    short sample[NSAMPLES];
-    float t1 = 400 * 0.001;
-    float t2 = 800 * 0.001;
+    float t1 = 10 * 0.001;
+    float t2 = 20 * 0.001;
     float fs = 8000;
     float a0 = 0.5;
     float a1 = 0.3;
@@ -27,7 +27,7 @@ int main()
   
  
    /* abre os arquivos de entrada e saida */
-  if ((in_file = fopen("Audio_entrada.pcm","rb"))==NULL)
+  if ((in_file = fopen("impulsoun.pcm","rb"))==NULL)
   {
     printf("\nErro: Nao abriu o arquivo de entrada\n");
     return 0;

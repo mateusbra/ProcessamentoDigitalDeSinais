@@ -15,6 +15,9 @@ a = wc/(Flinha + wc)
 b = (wc-Flinha)/(Flinha + wc)
 #y[n] = ax[n] + ax[n-1] - by[n-1]
 #Y(z) = a * X(z) + a * X(z) * z^-1 - b * Y(z) * z^-1
+
+
+
 #Y(z)/X(z) =  (a + a * z^-1)/ (1 + b * z^-1)
 tf1 = TransferFunction(a*s-a, s-(b), s)
 pole_zero_plot(tf1) 
