@@ -5,9 +5,9 @@ from scipy.signal import freqz
 entrada = np.fromfile("sweep.pcm", dtype='int16')
 
 fs = 8000
-fchz1 = 1000
+fchz1 = 2000
 fc1 = fchz1/fs#400/8000
-fchz2 = 2000
+fchz2 = 3000
 fc2 = fchz2/fs#400/8000
 M = 100
 
@@ -60,6 +60,10 @@ plt.show()
 saida = np.convolve(entrada,H3)
 plt.plot(saida)
 plt.show()
+
+for i in range(0,len(H3)):
+    H3[i] =  H3[i]*32768
+
 #Monta arquivo de saida
 with open("CoefPF.dat", "w") as f:
     for s in H3:

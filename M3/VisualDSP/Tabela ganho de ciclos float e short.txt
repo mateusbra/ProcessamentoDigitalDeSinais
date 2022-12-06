@@ -1,0 +1,14 @@
+Equalizador em float:
+		 AVG   : 17736
+		 MIN   : 8938
+		 MAX   : 17916
+		 CALLS : 8001
+===================================================================================================================================
+Equalizador em short:
+		 AVG   : 317
+		 MIN   : 317
+		 MAX   : 317
+		 CALLS : 8000
+
+
+Ganho de aproximadamente 56 ciclos
