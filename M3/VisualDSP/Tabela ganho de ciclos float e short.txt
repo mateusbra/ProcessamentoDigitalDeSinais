@@ -11,4 +11,4 @@ Equalizador em short:
 		 CALLS : 8000
 
 
-Ganho de aproximadamente 56 ciclos
+Ganho de aproximadamente 56 vezes mais em ciclos
